@@ -1,0 +1,27 @@
+{
+  "name": "my-realworld",
+  "version": "1.0.0",
+  "description": "基于realworld的api接口，练手开发vue3+nuxt的服务端渲染项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/czl0325/my-realworld.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/czl0325/my-realworld/issues"
+  },
+  "homepage": "https://github.com/czl0325/my-realworld#readme",
+  "dependencies": {
+    "nuxt": "^2.15.8"
+  },
+  "devDependencies": {
+    "@nuxt/types": "~2.15.0",
+    "unplugin-vue-define-options": "^0.11.0"
+  }
+}
