@@ -12,7 +12,9 @@
     "sass-loader": "^13.0.2"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.1",
     "@vuestic/nuxt": "^1.0.5",
+    "pinia": "^2.0.21",
     "tdesign-vue-next": "^0.20.3"
   }
 }
