@@ -20,5 +20,12 @@ export default defineNuxtConfig({
         component: fileURLToPath(new URL('./pages/login/index.vue', import.meta.url))
       }
     ]
+  },
+  vuestic: {
+    config: {
+      colors: {
+        primary: '#5CB85C'
+      },
+    }
   }
 })

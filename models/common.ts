@@ -3,4 +3,6 @@ export interface IUserInfo {
   following?: boolean;// false
   image?: string;// "https://api.realworld.io/images/demo-avatar.png"
   username?: string;// "Gerome"
+  token?: string;
+  password?: string;
 }

@@ -5,16 +5,15 @@ const baseUrl = "https://api.realworld.io/api"
 
 const get = async <T>(url: string, params = {}): Promise<T> => {
   try {
-    const user = useUserStore()
-    const headers = user.token ? {
-      authorization: `Token ${user.token}`
+    const store = useUserStore()
+    const headers = store.user.token ? {
+      authorization: `Token ${store.user.token}`
     } : {}
-    const res = await $fetch<T>(baseUrl + url, {
+    return await $fetch<T>(baseUrl + url, {
       headers,
       method: "GET",
       params
     })
-    return res
   } catch (error) {
     return error
   }
@@ -22,17 +21,18 @@ const get = async <T>(url: string, params = {}): Promise<T> => {
 
 const post = async <T>(url: string, params = {}): Promise<T> => {
   try {
-    const user = useUserStore()
-    const headers = user.token ? {
-      authorization: `Token ${user.token}`
+    const store = useUserStore()
+    const headers = store.user.token ? {
+      authorization: `Token ${store.user.token}`
     } : {}
-    const res = await $fetch<T>(baseUrl + url, {
+    return await $fetch<T>(baseUrl + url, {
       headers,
       method: 'POST',
       body: params
-    });
-    return res;
+    })
   } catch (error) {
     return error
   }
 }
+
+export default { get, post }
